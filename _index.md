@@ -1,0 +1,8 @@
+content/
+├── home
+│   ├── index.md
+├── https://blogs.cpf-coaching.com
+├── privacy.html
+├── collection-of-learning-platforms.html
+├── collection-of-security-feeds.html
+├── collection-of-security-podcasts.html
