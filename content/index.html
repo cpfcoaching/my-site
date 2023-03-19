@@ -66,13 +66,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   </head>
   <body>
-  <!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJLJ34M"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-    <header role="banner">
-      <nav role="navigation">
+ <header role="banner">
+      <nav role="navigation" class="navbar">
           <img class="logo" src="./static/images/logo.png" alt="CPF Coaching">
         <p class="logo"> <a href="./index.html" title="CPF Coaching">CPF Coaching</a></p>
          <ul>
@@ -109,7 +109,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </a>
           </li>
           <li class="Newsletter">
-            <a rel="external" href="https://cpf-coaching.beehiiv.com/subscribe" title="blogs">
+            <a rel="external" href="https://substack.cpf-coaching.com/" title="blogs">
               <svg class="fa-rss-square">
                 <use xlink:href="#fa-rss-square"></use>
               </svg>
@@ -117,9 +117,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </a>
           </li>
         </ul>
-        
       </nav>
-    </header>
+ </header">
+
     <main role="main">
       <article id="webslides">
 
@@ -220,13 +220,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<section>
           <!--.wrap = container (width: 90%) -->
         <div class="wrap size-80 frame">
-            <div class="grid vertical-align">
-              <div class="column">
-                <figure><img class="aligncenter" src="./static/images/me.png" alt="Chris Foulon"></figure>
+            <div class="grid sm">
+            <div class="column">
+                <figure><img class="browser" src="./static/images/me.png" alt="Chris Foulon"></figure>
               </div>
-              <div class="column">
-                <h1> About Me
-                </h1>
+               <!-- .end .content-left -->
+               <div class="column">
+                <h1> About Me</h1>
                     <p>You can call me Chris if you'd like. </p> 
                 <p>I strive to shine the light on the value of others so that they can see it in themselves.
 				<p>I have 15+ years as an experienced Information Security Manager, Adjunct Professor, and Cybersecurity Strategist with a passion for customer service, process improvement, and information security. I have managed teams of over 30+ people across multiple locations and have been a people leader for over 10+ years.
@@ -234,10 +234,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<p>I have trained hundreds of people to go from where they were to where they wanted to be. They were the ones to put in all the hard work. I had the pleasure of coaching and guiding them along the way, helping them overcome obstacles, setting practical goals, and working towards accomplishing their dreams.
                 <p>For more information check out my <a href="https://www.linkedin.com/in/christophefoulon/" class="button zoomIn" title="Linkedin profile"> Linkedin profile.</a>
               </div>
-            </div>
+                <!-- .end .content-left -->
+       
             </div>
             <!-- end .grid-->
-          </div>
+        
           </div>
           <!-- .end .wrap -->
         </section>
@@ -502,9 +503,28 @@ I can help you with those, just choose how much time you need, it’s that easy.
           <section>
           <div class="wrap size-80 frame">
 <h2> Sign Up for our email Newsletters:</h2>
-<iframe src="https://embeds.beehiiv.com/7e22178e-4506-4170-b5be-1af3d107311c?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
-              <p> or </p>
-<iframe src="https://substack.cpf-coaching.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+
+<form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSeuvgYKbKcfKchyJpzLXaajKFCp_Uz8lK6243RNzrTwctdSaw/formResponse">
+   <label>First Name</label>
+   	 	<input type="First Name" name="entry.2005620554" value="First Name" />
+	<label>Last Name </label>	
+		<input type="Last Name" name="entry.43778971" value="Last Name" />
+  <label>Email</label>
+ 	 <input type="email" name="entry.1045781291" placeholder="Email Address" />
+ 	   <label>Phone number</label>
+ 	 <input type="Phone number" name="entry.1166974658" placeholder="Phone number" />
+  <label> You can unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our Privacy Policy.
+By clicking submit below, you consent to allow CPF Coaching to store and process the personal information submitted above to provide you the content requested.</label>
+
+
+  <!-- Let's include a hidden field containing our current path -->
+<input type="hidden" name="entry.1774353890" value="https://docs.google.com/forms/d/e/1FAIpQLSeuvgYKbKcfKchyJpzLXaajKFCp_Uz8lK6243RNzrTwctdSaw/viewform" />
+  <button type="submit">Subscribe</button>
+</form>
+
+
+
+<!--- <iframe src="https://substack.cpf-coaching.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe> --->
 </section>
 
           <!-- .end .wrap -->
@@ -552,6 +572,13 @@ I can help you with those, just choose how much time you need, it’s that easy.
               <em>Mail</em>
             </a>
           </li>
+             <li class="Newsletter">
+            <a rel="external" href="https://magic.beehiiv.com/v1/06bd774c-6227-4011-b3b2-4b6360ba8f40?email=<email>" title="Newsletter">
+              <svg class="fa-rss-square">
+                <use xlink:href="#fa-rss-square"></use>
+              </svg>
+              <em>Newsletter</em>
+            </a></li>
           <li class="Blogs">
             <a rel="external" href="https://substack.cpf-coaching.com" title="blogs">
               <svg class="fa-rss-square">
@@ -589,14 +616,10 @@ I can help you with those, just choose how much time you need, it’s that easy.
 
    <!-- A global footer   -->
 
-                
-        
-    </footer>
 
-          <footer>
+          <footer class="bg-white">
             <div class="wrap">
-              <p>
-                 <div class="wrap">   
+    
          <p>A <a href="https://cpf-coaching.com">CPF Coaching</a> Production, &copy; 2023.</p>
          <a rel="external" href="./content/privacy.html" title="privacy">privacy</a>
                 </span>
