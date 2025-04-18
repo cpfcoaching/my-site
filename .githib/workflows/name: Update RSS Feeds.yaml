@@ -1,0 +1,36 @@
+name: Update RSS Feeds
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # Runs daily at 6:00 UTC
+  workflow_dispatch:
+
+jobs:
+  update-feeds:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          cd tools
+          npm install rss-parser
+
+      - name: Run RSS parser
+        run: node tools/rss-parser.js
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/christophe-foulon-blog-podcast-list.html
+          git diff --cached --quiet || git commit -m "Update blog podcast list from RSS feeds [auto]"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
