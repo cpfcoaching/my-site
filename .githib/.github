@@ -1,7 +1,0 @@
-.github/
-  workflows/
-    rss-parser.yml
-package.json
-js/
-  rss-feeds.json
-  rss-parser.js
