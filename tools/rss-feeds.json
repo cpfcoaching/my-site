@@ -1,12 +1,16 @@
 {
   "feeds": [
     {
-      "url": "https://api.substack.com/feed/podcast/1338707.rss",
-      "category": "Substack Blog"
+      "url": "https://cpf-coaching.medium.com/feed",
+      "category": "Medium Blog"
     },
     {
       "url": "https://cpf-coaching.com/blogs/rss.xml",
       "category": "CPF Coaching Blog"
+    },
+    {
+      "url": "https://substack.cpf-coaching.com/feed",
+      "category": "Substack Blog"
     }
   ]
 }
