@@ -1,7 +1,7 @@
 content/
 ├── home
 │   ├── index.md
-├── https://christophefoulon.com
+├── http://christophefoulon.com
 ├── privacy.html
 ├── collection-of-learning-platforms.html
 ├── collection-of-security-feeds.html
