@@ -1,1 +1,8 @@
 User-agent: *
+Allow: /
+Disallow: /static/js/
+Disallow: /static/css/
+
+# Sitemaps
+Sitemap: https://christophefoulon.com/sitemap.xml
+Sitemap: https://christophefoulon.com/sitemapindex.txt

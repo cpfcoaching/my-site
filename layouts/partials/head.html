@@ -1,0 +1,38 @@
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "CPF Coaching",
+  "image": "/static/images/logo.png",
+  "description": "{{ .Site.Params.Description }}",
+  "@id": "https://christophefoulon.com",
+  "url": "https://christophefoulon.com",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US"
+  },
+  "offers": {
+    "@type": "Offer",
+    "description": "Cybersecurity Leadership Coaching"
+  }
+}
+</script>
+
+<!-- Resource Hints -->
+<link rel="preload" href="/static/images/logo.webp" as="image" type="image/webp">
+<link rel="preload" href="/css/webslides.css" as="style">
+<link rel="modulepreload" href="/js/webslides.js">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ or .Page.Title .Site.Title }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ or .Page.Title .Site.Title }}">
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">

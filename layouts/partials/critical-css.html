@@ -1,0 +1,53 @@
+<style>
+/* Critical rendering path CSS */
+:root {
+  --slideHeight: 100vh;
+  --slideWidth: 100vw;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+article {
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo {
+  max-height: 128px;
+  width: auto;
+}
+
+.wrap {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+  max-width: 1024px;
+}
+
+h1 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.feed-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.feed-item {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+</style>
+<!-- Defer non-critical CSS -->
+<link rel="preload" href="/css/webslides.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/webslides.css"></noscript>
