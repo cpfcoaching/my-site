@@ -125,19 +125,18 @@ async function parseSubstackJSON(jsonStr) {
     const data = JSON.parse(jsonStr);
     if (Array.isArray(data)) {
       return data.map(post => ({
-        title: post.title,
+        title: post.title ? post.title.replace(/<!\[CDATA\[(.*?)\]\]>/g, '$1') : '',
         link: `https://cpf-coaching.substack.com/p/${post.slug}`,
-        pubDate: post.post_date,
-        contentSnippet: post.description || post.subtitle || '',
+        pubDate: post.post_date ? new Date(post.post_date).toISOString() : '',
+        contentSnippet: post.description ? post.description.replace(/<!\[CDATA\[(.*?)\]\]>/g, '$1') : post.subtitle || '',
         isoDate: post.post_date
       }));
     } else if (data.feed) {
-      // Handle alternate Substack feed format
       return data.feed.posts.map(post => ({
-        title: post.title,
+        title: post.title ? post.title.replace(/<!\[CDATA\[(.*?)\]\]>/g, '$1') : '',
         link: post.canonical_url,
-        pubDate: post.published_at,
-        contentSnippet: post.description || post.subtitle || '',
+        pubDate: post.published_at ? new Date(post.published_at).toISOString() : '',
+        contentSnippet: post.description ? post.description.replace(/<!\[CDATA\[(.*?)\]\]>/g, '$1') : post.subtitle || '',
         isoDate: post.published_at
       }));
     }
