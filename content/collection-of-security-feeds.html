@@ -195,6 +195,36 @@
           <!-- .end .wrap -->
         </section>
 
+        <!-- : bg-white -->
+        <section>
+          <div class="wrap">
+            <h1>Security News & Update Feeds</h1>
+            <p class="text-intro">Stay informed with the latest cybersecurity news and updates.</p>
+            
+            <div class="grid">
+              <div class="column">
+                <ul class="flexblock features">
+                  {{ range .Feeds }}
+                  <li class="feed-item">
+                    <h3><a href="{{ .Link }}">{{ .Title }}</a></h3>
+                    <p class="feed-date">{{ .PubDate }}</p>
+                    <p class="feed-description">{{ .Description }}</p>
+                  </li>
+                  {{ end }}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- : bg-white -->
+        <section>
+          <div class="wrap">
+            <p>Need personalized guidance for your cybersecurity program?</p>
+            <p><a href="https://app.reclaim.ai/m/cpf-coaching/flexible-quick-meeting" class="button">Schedule a consultation</a></p>
+          </div>
+        </section>
+
       </article>
     </main>
     <!--main-->

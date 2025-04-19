@@ -12,14 +12,14 @@
 <body>
   {{ partial "banner.html" . }}
   <main role="main">
-    <article {{- if .Site.Params.Webslides.slideshow }} id="webslides" {{- if .Site.Params.Webslides.vertical }} class="vertical" {{- end -}}{{- end -}}>
+    <article id="webslides">
       {{ block "main" . -}}{{- end }}
     </article>
   </main>
 
   {{ partial "footer.html" . }}
 
-  <!-- Required Scripts -->
+  <!-- Required -->
   <script src="/static/js/webslides.js"></script>
   <script>
     window.ws = new WebSlides();

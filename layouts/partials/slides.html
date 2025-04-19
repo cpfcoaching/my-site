@@ -78,7 +78,7 @@
         <span class="background frame"></span>
           {{- end -}}
         {{- end }}
-        <div{{ with $.Scratch.Get "contentClass" }} class="{{ . }}"{{ end }}>
+        <div class="wrap {{ with $.Scratch.Get "contentClass" }}{{ . }}{{ end }}">
         {{- with $.Scratch.Get "secondaryClass" }}
           <div class="{{ . }}">
         {{- end -}}
