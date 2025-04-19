@@ -3322,9 +3322,6 @@ nav[role='navigation'] li a {
   nav[role='navigation'] li a:hover {
     background-color: rgba(50, 50, 50, 0.7); }
 
-nav li.twitter a:hover {
-  background-color: #1da1f3; }
-
 nav li.facebook a:hover {
   background-color: #3b5998; }
 
