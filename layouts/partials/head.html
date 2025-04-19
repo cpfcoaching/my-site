@@ -1,3 +1,29 @@
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KJLJ34M');</script>
+<!-- End Google Tag Manager -->
+
+<!-- SEO -->
+<title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+<meta name="keywords" content="Cybersecurity, Information Security, Leadership, Leadership Development, Cybersecurity Leadership Development, Coaching, Leadership Coaching, Cybersecurity Leadership Coaching, Career Development, Career Development Coaching, Interview prep, Interview Preparation, Security, Security Program Development, startup security, startup consulting, startup advisory">
+<meta name="author" content="Christophe Foulon">
+
+<!-- URL CANONICAL -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+<!-- CSS WebSlides -->
+<link rel="stylesheet" type='text/css' media='all' href="/static/css/webslides.css">
+
+<!-- Optional - CSS SVG Icons (Font Awesome) -->
+<link rel="stylesheet" type='text/css' media='all' href="/static/css/svg-icons.css">
+
 <!-- Structured Data -->
 <script type="application/ld+json">
 {
@@ -25,14 +51,81 @@
 <link rel="preload" href="/css/webslides.css" as="style">
 <link rel="modulepreload" href="/js/webslides.js">
 
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="{{ or .Page.Title .Site.Title }}">
-<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+<!-- SOCIAL CARDS -->
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+<meta property="og:image" content="/static/images/logo.png">
+<meta property="og:updated_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05" }}">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ or .Page.Title .Site.Title }}">
-<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+<!-- FAVICONS -->
+<link rel="shortcut icon" sizes="16x16" href="/static/images/logo.png">
+<link rel="shortcut icon" sizes="32x32" href="/static/images/logo.png">
+<link rel="apple-touch-icon icon" sizes="76x76" href="/static/images/logo.png">
+<link rel="apple-touch-icon icon" sizes="120x120" href="/static/images/logo.png">
+<link rel="apple-touch-icon icon" sizes="152x152" href="/static/images/logo.png">
+<link rel="apple-touch-icon icon" sizes="180x180" href="/static/images/logo.png">
+<link rel="apple-touch-icon icon" sizes="192x192" href="/static/images/logo.png">
+
+<!-- Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#009544">
+
+<meta name='impact-site-verification' value='a9d24e0b-10aa-4494-96ef-331b9c40778b'>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3JXK0Z5F7W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3JXK0Z5F7W');
+  gtag('config', 'G-3JXK0Z5F7W', {
+    'linker': {
+      'domains': ['christophefoulon.com']
+    }
+  });
+  gtag('config', 'G-3JXK0Z5F7W', {
+    'cookie_flags': 'SameSite=None; Secure'
+  });
+</script>
+<header role="banner">
+  <nav role="navigation" class="navbar">
+          <img class="logo" src="./static/images/logo.png" alt="CPF Coaching LLC">
+        <p class="logo"> <a href="./index.html" title="CPF Coaching LLC">CPF Coaching LLC - A Dedicated vCISO & Cybersecurity Leadership Coach /a></p>
+         <ul>
+          <li class="Linkedin">
+            <a rel="external" href="https://www.linkedin.com/company/cpf-coaching/" title="Linkedin">
+              <svg class="fa-linkedin">
+                <use xlink:href="#fa-linkedin"></use>
+              </svg>
+              <em>CPF Coaching LLC - A Dedicated vCISO & Cybersecurity Leadership Coach </em>
+            </a>
+          <li class="Calendar">
+            <a rel="external" href="https://app.reclaim.ai/m/cpf-coaching/flexible-quick-meeting" title="Calendar">
+              <svg class="fa-calendar">
+                <use xlink:href="#fa-calendar"></use>
+              </svg>
+              <em>Calendar</em>
+            </a>
+          </li>
+          <li class="Mail">
+            <a rel="external" href="mailto:info@cpf-coaching.com" title="Mail">
+              <svg class="fa-envelope">
+                <use xlink:href="#fa-envelope"></use>
+              </svg>
+              <em>Mail</em>
+            </a>
+          </li>
+          <li class="Newsletter">
+            <a rel="external" href="https://substack.cpf-coaching.com/" title="blogs">
+              <svg class="fa-rss-square">
+                <use xlink:href="#fa-rss-square"></use>
+              </svg>
+              <em>Blogs</em>
+      </a>
+    </div>
+  </nav>
+</header>
