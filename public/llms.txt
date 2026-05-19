@@ -1,0 +1,30 @@
+# Christophe Foulon - LLMs.txt
+# https://llmstxt.org/
+
+## About
+Christophe Foulon is an executive cybersecurity advisor, Virtual CISO (vCISO), author, podcast host, and career coach. With over 15 years of industry experience, he focuses on securing people and processes alongside technology, helping organizations navigate security risk and compliance while mentoring professionals transitioning into or advancing within the cybersecurity field.
+
+## Roles & Services
+- Executive Cybersecurity Advisor & Virtual CISO (vCISO): Providing fractional cybersecurity leadership, security strategy, and compliance programs (NIST CSF, SOC 2, HIPAA, CMMC, ISO 27001).
+- Cybersecurity Career Coach: Performance-based coaching for professionals transitioning into or growing in cybersecurity, including resume building and interview prep.
+- Founder & Principal Consultant at CPF Coaching LLC.
+
+## Books & Publications
+- Co-author of "Hack the Cybersecurity Interview" (Nominated as a Finalist for SANS Difference Makers Awards Book of the Year).
+- Co-author of "Developing your Cybersecurity Career Path" (RSA Conference Ben's Book of the Month).
+- Co-author of "Job Hunting Strategies: Advancing your career in cybersecurity".
+- Co-author of "Four Easy Steps for Achieving Goals".
+- Contributor to "Understand, Manage, and Measure Cyber Risk" by Ryan Leirvik.
+
+## Media & Podcasts
+- Host of the "Breaking Into Cybersecurity" podcast: Interviewing industry experts to share insights on entering and growing in the cyber industry.
+
+## Digital Profiles & Contact
+- Website: https://christophefoulon.com
+- Company Website: https://www.cpf-coaching.com
+- Email: info@cpf-coaching.com
+- LinkedIn: https://www.linkedin.com/in/christophefoulon/
+- Twitter/X: https://twitter.com/chris_foulon
+- Amazon Author Page: https://www.amazon.com/author/christophefoulon
+- Thinkers360: https://thinkers360.com/pm/christophefoulon
+- Reclaim Calendar: https://app.reclaim.ai/m/cpf-coaching/flexible-quick-meeting
