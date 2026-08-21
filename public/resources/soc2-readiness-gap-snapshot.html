@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SOC 2 Readiness Gap Snapshot for Small SaaS Teams</title>
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; max-width: 900px; margin: 2rem auto; padding: 0 1rem; color: #1f2933; }
+    h1, h2, h3 { line-height: 1.2; color: #111827; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid #d0d7de; padding: 0.55rem; vertical-align: top; }
+    th { background: #f6f8fa; text-align: left; }
+    .warning { border-left: 4px solid #b45309; padding: 0.75rem 1rem; background: #fffbeb; }
+    .cta { border: 1px solid #d0d7de; padding: 1rem; background: #f9fafb; }
+  </style>
+</head>
+<body>
+  <h1>SOC 2 Readiness Gap Snapshot for Small SaaS Teams</h1>
+  <p><strong>A limited preview checklist to help you spot missing owners, evidence, and readiness gaps before you buy tools or start audit fieldwork.</strong></p>
+
+  <div class="warning">
+    <p><strong>Use warning:</strong> This is not a SOC 2 audit checklist, legal advice, auditor guidance, customer-facing compliance proof, or a guarantee that your company is ready for an audit.</p>
+  </div>
+
+  <h2>How to use this snapshot</h2>
+  <ol>
+    <li>Work through the triage prompts honestly.</li>
+    <li>Mark each area as ready, partial, missing, or unknown.</li>
+    <li>Assign one owner for every partial, missing, or unknown area.</li>
+    <li>Capture the next cleanup action in plain language.</li>
+    <li>Use the results to decide whether you need deeper readiness prep.</li>
+  </ol>
+
+  <h2>Five-minute readiness triage</h2>
+  <p>Status key: <strong>Ready</strong> means owner, evidence, and location are clear. <strong>Partial</strong> means evidence or ownership exists but is incomplete, stale, scattered, or informal. <strong>Missing</strong> means no usable evidence exists. <strong>Unknown</strong> means the team does not know who owns it or where proof lives.</p>
+
+  <table>
+    <thead>
+      <tr><th>Prompt</th><th>Mark one</th><th>Cleanup action</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Can you explain which products, systems, vendors, data flows, and customer data should be considered in scope?</td>
+        <td>Ready / Partial / Missing / Unknown</td>
+        <td>Write the smallest defensible scope statement: product, customer data handled, key systems, key vendors, and owner.</td>
+      </tr>
+      <tr>
+        <td>Can you name the internal owner for access reviews, change management, vendor records, incident response, evidence collection, and policy upkeep?</td>
+        <td>Ready / Partial / Missing / Unknown</td>
+        <td>Assign one accountable owner per area.</td>
+      </tr>
+      <tr>
+        <td>Can your team produce recent evidence without recreating it manually?</td>
+        <td>Ready / Partial / Missing / Unknown</td>
+        <td>Create a single evidence location map for each readiness area.</td>
+      </tr>
+      <tr>
+        <td>Can you show recurring review activity, or does work happen only when someone asks?</td>
+        <td>Ready / Partial / Missing / Unknown</td>
+        <td>Record owner, frequency, evidence location, and next due date for key reviews.</td>
+      </tr>
+      <tr>
+        <td>Do you know which gaps would slow down an auditor, compliance platform setup, or enterprise customer security review?</td>
+        <td>Ready / Partial / Missing / Unknown</td>
+        <td>List the top five delay risks with owner, impact, next action, and blocker status.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Evidence category snapshot</h2>
+  <table>
+    <thead>
+      <tr><th>Readiness area</th><th>Owner</th><th>Evidence you think exists</th><th>Evidence location</th><th>Status</th><th>Next cleanup action</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Scope and system inventory</td><td></td><td>Product/system list, data-flow notes, vendor list, customer-data notes</td><td></td><td>Ready / Partial / Missing / Unknown</td><td></td></tr>
+      <tr><td>User access reviews</td><td></td><td>User list, access review notes, admin-role review, removal records</td><td></td><td>Ready / Partial / Missing / Unknown</td><td></td></tr>
+      <tr><td>Change-management evidence</td><td></td><td>Ticket history, pull requests, approvals, deployment notes, rollback notes</td><td></td><td>Ready / Partial / Missing / Unknown</td><td></td></tr>
+      <tr><td>Vendor/security review records</td><td></td><td>Vendor list, review dates, contracts, security notes, renewal dates</td><td></td><td>Ready / Partial / Missing / Unknown</td><td></td></tr>
+      <tr><td>Incident-response readiness</td><td></td><td>Incident contact list, escalation path, tabletop notes, post-incident notes</td><td></td><td>Ready / Partial / Missing / Unknown</td><td></td></tr>
+      <tr><td>Policy acknowledgement and training evidence</td><td></td><td>Policy list, acknowledgement records, onboarding/training records</td><td></td><td>Ready / Partial / Missing / Unknown</td><td></td></tr>
+      <tr><td>Backup/recovery or availability evidence</td><td></td><td>Backup notes, restore test notes, monitoring alerts, uptime review notes</td><td></td><td>Ready / Partial / Missing / Unknown</td><td></td></tr>
+    </tbody>
+  </table>
+
+  <h2>Gap priority worksheet</h2>
+  <p>Priority values: Blocker, Needs cleanup, Monitor.</p>
+  <table>
+    <thead>
+      <tr><th>Gap</th><th>Area</th><th>Priority</th><th>Why it matters</th><th>Owner</th><th>Next action</th><th>Due date</th></tr>
+    </thead>
+    <tbody>
+      <tr><td></td><td></td><td>Blocker / Needs cleanup / Monitor</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td>Blocker / Needs cleanup / Monitor</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td>Blocker / Needs cleanup / Monitor</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td>Blocker / Needs cleanup / Monitor</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td>Blocker / Needs cleanup / Monitor</td><td></td><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <div class="cta">
+    <p><strong>If this snapshot exposed several partial, missing, or unknown areas:</strong> use the full Compliance Readiness Kit to organize owners, evidence, gaps, and next actions in a deeper workbook before audit or customer-review pressure increases.</p>
+    <p><a href="https://cpfcoaching.gumroad.com/l/ComplianceReadiness?utm_source=cpf_site&utm_medium=resource&utm_campaign=soc2_gap_snapshot&utm_content=snapshot_asset_bridge">Review the full Compliance Readiness Kit</a></p>
+  </div>
+</body>
+</html>
